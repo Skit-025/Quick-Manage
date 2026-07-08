@@ -1,5 +1,11 @@
+import os
+import sys
 import streamlit as st
 import pandas as pd
+
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+if ROOT not in sys.path:
+    sys.path.insert(0, ROOT)
 
 from analytics.reports import get_expenses_dataframe, monthly_summary, top_spending_category
 from database.db_manager import DatabaseManager
@@ -27,3 +33,6 @@ def show():
 	cat_id, amount = top_spending_category(df)
 	if cat_id is not None:
 		st.metric("Top category id", f"{cat_id}", delta=f"₹{amount:,.2f}")
+
+if __name__ == "__main__":
+    show()
