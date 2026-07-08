@@ -23,7 +23,7 @@ choice = st.sidebar.selectbox("Select page", page_names)
 selected_path = PAGES_DIR / choice
 
 try:
-    ns = runpy.run_path(str(selected_path))
+    ns = runpy.run_path(str(selected_path), run_name=choice)
     show = ns.get("show")
     if callable(show):
         show()
