@@ -1,5 +1,11 @@
+import os
+import sys
 import streamlit as st
 from datetime import date
+
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+if ROOT not in sys.path:
+    sys.path.insert(0, ROOT)
 
 from analytics.reports import get_expenses_dataframe
 from database.db_manager import DatabaseManager
@@ -40,3 +46,6 @@ def show():
 			st.experimental_rerun()
 		except Exception as e:
 			st.error(f"Failed to add expense: {e}")
+
+if __name__ == "__main__":
+    show()
