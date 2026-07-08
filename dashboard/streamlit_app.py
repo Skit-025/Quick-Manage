@@ -14,7 +14,7 @@ PAGES_DIR = ROOT / "pages"
 
 st.set_page_config(page_title="Finance Dashboard", layout="wide")
 
-st.sidebar.title("Navigation")
+st.sidebar.title("Navigation for devs...❤️")
 page_files = sorted([p for p in PAGES_DIR.iterdir() if p.suffix == ".py"])
 page_names = [p.name for p in page_files]
 
