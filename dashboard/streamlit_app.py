@@ -12,7 +12,7 @@ if str(PROJECT_ROOT) not in sys.path:
 
 PAGES_DIR = ROOT / "pages"
 
-st.set_page_config(page_title="Finance Dashboard", layout="wide")
+st.set_page_config(page_title="Finance Dashboard", layout="wide",page_icon="💵")
 
 st.sidebar.title("Navigation for devs...❤️")
 page_files = sorted([p for p in PAGES_DIR.iterdir() if p.suffix == ".py"])
