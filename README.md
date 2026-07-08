@@ -1117,37 +1117,25 @@ screenshots/
 ├── analytics.png
 ```
 
+
 ---
-
 ## 🏠 Overview Page
-
-```markdown
 ![Overview](screenshots/overview.png)
-```
 
 ---
 
 ## 💰 Expenses Page
-
-```markdown
 ![Expenses](screenshots/expenses.png)
-```
 
 ---
 
 ## 📈 Analytics Dashboard
-
-```markdown
-![Analytics](screenshots\analytics.png)
-```
+![Analytics](screenshots/analytics.png)
 
 ---
 
 ## 🤖 Prediction Dashboard
-
-```markdown
 ![Prediction](screenshots/prediction.png)
-```
 
 ---
 
