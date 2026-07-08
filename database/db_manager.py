@@ -9,7 +9,7 @@ from typing import Optional
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from config import DB_PATH,APP_NAME
-from models import User,Category,Expense,Budget
+from database.models import User,Category,Expense,Budget
 from database.exception import(
     InvalidExpenseError,UserNotFoundError,CategoryNotFoundError,BudgetExceededError,
     DatabaseError,DuplicateEntryError
