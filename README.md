@@ -1138,7 +1138,7 @@ screenshots/
 ## 📈 Analytics Dashboard
 
 ```markdown
-![Analytics](screenshots/analytics.png)
+![Analytics](screenshots\analytics.png)
 ```
 
 ---
