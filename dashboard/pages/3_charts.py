@@ -1,5 +1,11 @@
+import os
+import sys
 import streamlit as st
 import pandas as pd
+
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+if ROOT not in sys.path:
+    sys.path.insert(0, ROOT)
 
 from analytics.reports import get_expenses_dataframe, monthly_summary
 from database.db_manager import DatabaseManager
@@ -28,3 +34,6 @@ def show():
 	summary['total_amount'] = summary['total_amount'].astype(float)
 	st.subheader("Monthly spending")
 	st.bar_chart(data=summary.set_index('month')['total_amount'])
+
+if __name__ == "__main__":
+    show()
