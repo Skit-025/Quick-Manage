@@ -1,5 +1,11 @@
+import os
+import sys
 import streamlit as st
 import pandas as pd
+
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+if ROOT not in sys.path:
+    sys.path.insert(0, ROOT)
 
 from analytics.reports import get_expenses_dataframe
 from database.db_manager import DatabaseManager
@@ -44,3 +50,7 @@ def show():
         st.dataframe(forecast_df, use_container_width=True)
     else:
         st.warning("Not enough data to generate a forecast.")
+
+
+if __name__ == "__main__":
+    show()
