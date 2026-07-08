@@ -593,13 +593,13 @@ finance-dashboard/
 # 📦 Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/finance-dashboard.git
+git clone https://github.com/Skit-025/Quick-Manage.git
 ```
 
 Move into the project directory
 
 ```bash
-cd finance-dashboard
+cd Quick-Manage
 ```
 
 ---
@@ -911,7 +911,6 @@ G --> H
 
 Every expense entered into the application passes through multiple analytical stages before becoming a visualization.
 
-```mermaid
 flowchart TD
 
 Expense Entry
@@ -1113,11 +1112,9 @@ screenshots/
 
 ├── expenses.png
 
-├── analytics.png
-
 ├── prediction.png
 
-├── settings.png
+├── analytics.png
 ```
 
 ---
@@ -1330,42 +1327,6 @@ Flask --> ML
 ML --> Flask
 
 Flask --> Streamlit
-```
-
----
-
-# 🌍 Future Cloud Deployment
-
-```mermaid
-flowchart LR
-
-User
-
-Internet
-
-Render
-
-Streamlit Cloud
-
-SQLite
-
-ML
-
-GitHub
-
-User --> Internet
-
-Internet --> Streamlit Cloud
-
-Streamlit Cloud --> Render
-
-Render --> SQLite
-
-Render --> ML
-
-GitHub --> Render
-
-GitHub --> Streamlit Cloud
 ```
 
 ---
