@@ -18,7 +18,7 @@ from itertools import islice, groupby
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from config import APP_NAME
-from models import Expense
+from database.models import Expense
 from core.exceptions import StreamError
 
 logger = logging.getLogger(APP_NAME)
